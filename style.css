@@ -1,5 +1,5 @@
 body {
-background-color: #ffc46c;
+background-color: #c40f0f
 margin: 0;
 }
 
@@ -12,6 +12,20 @@ with the same id in at the same HTML page
 
 #header {border: thin solid black; }
  */
+
+
+ #main-image {
+   width: 600px;
+   border-radius: 50px;
+ }
+
+ #main-image-wrapper {
+   text-align: center;
+ }
+
+ #menu {
+   list-style: upper-latin;
+ }
 
 .grid-container {
   border: thin solid black;
