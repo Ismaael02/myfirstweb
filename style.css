@@ -13,25 +13,6 @@ with the same id in at the same HTML page
 #header {border: thin solid black; }
  */
 
- nav a{
-    text-decoration:none;
-    color:inherit;
-    font-size:14px;
-    }
-    nav li{
-    display:inline-block;
-    width:10%;
-    padding:5px 10px;
-    background-color:#FFFFFF;
-    border:1px solid #FFFFFF;
-    text-align:center;
-    color:#FFFFFF;
-    }
-    nav li:hover{
-    background-color:#FFFFFF;
-    color:#FFFFFF;
-    }
-
 .grid-container {
   border: thin solid black;
   display: grid;
