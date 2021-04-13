@@ -56,10 +56,14 @@ with the same id in at the same HTML page
   color: white;
   text-decoration: none;
   padding: 10px;
-
 }
 
 #menu > li:hover {
   background-color: #005891;
-}
-}
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #menu > li {
+        width: 100%;
+    }
+  }
