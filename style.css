@@ -31,3 +31,15 @@ with the same id in at the same HTML page
 .box {
  border: thin solid black;
 }
+
+.menu ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.menu li a {
+  display: block;
+  padding: 15px 28px;
+}
