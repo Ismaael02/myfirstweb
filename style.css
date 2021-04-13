@@ -13,6 +13,15 @@ with the same id in at the same HTML page
 #header {border: thin solid black; }
  */
 
+ #main-image {
+   width: 600px;
+   border-radius: 50px;
+ }
+
+ #main-image-wrapper {
+   text-align: center;
+ }
+
 .grid-container {
   border: thin solid black;
   display: grid;
@@ -61,7 +70,7 @@ with the same id in at the same HTML page
 #menu > li:hover {
   background-color: #005891;
   }
-  
+
   @media only screen and (max-width: 768px) {
     #menu > li {
         width: 100%;
