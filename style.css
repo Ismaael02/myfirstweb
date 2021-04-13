@@ -34,9 +34,9 @@ Comentario:
 #menu {
 
   list-style: none;
-  border: thin solid #FFFFFF;
+  border: thin solid #000000;
   padding: 0;
-  background-color: #FFFFFF;
+  background-color: #fcd466;
   padding: 5px;
 }
 
@@ -46,7 +46,7 @@ Comentario:
 }
 
 #menu > li:first-child  {
-  background-color: #FFFFFF;
+  background-color: #fcd466;
 
 }
 
@@ -58,7 +58,7 @@ Comentario:
 }
 
 #menu > li:hover {
-  background-color: #FFFFFF;
+  background-color: #fcd466;
 }
 
 
