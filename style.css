@@ -32,14 +32,34 @@ with the same id in at the same HTML page
  border: thin solid black;
 }
 
-.menu ul {
-  margin: 0;
+/* menu styles */
+#menu {
+
   list-style: none;
+  border: thin solid #00b4f7;
   padding: 0;
-  display: flex;
+  background-color: #000000;
+  padding: 5px;
 }
 
-.menu li a {
-  display: block;
-  padding: 15px 28px;
+#menu > li {
+    border: thin solid #0090eb;
+    display: inline-grid;
+}
+
+#menu > li:first-child  {
+  background-color: #009df3;
+
+}
+
+#menu > li > a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+
+}
+
+#menu > li:hover {
+  background-color: #005891;
+}
 }
