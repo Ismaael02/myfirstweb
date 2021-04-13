@@ -46,7 +46,7 @@ with the same id in at the same HTML page
 }
 
 #footer {
-  background-color: #005891;
+  background-color: #c40f0f;
   padding: 10px;
   color: white;
   text-align: right;
@@ -58,18 +58,6 @@ with the same id in at the same HTML page
 #content {
   grid-area: content;
 }
-#footer { grid-area: footer; }
-
-.box {
- /* border: thin solid black; */
-}
-
-
-
-
-#header { grid-area: header; }
-#right { grid-area: right; }
-#content { grid-area: content; }
 #footer { grid-area: footer; }
 
 .box {
