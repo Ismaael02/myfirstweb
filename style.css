@@ -43,12 +43,12 @@ with the same id in at the same HTML page
 }
 
 #menu > li {
-    border: thin solid #0090eb;
+    border: thin solid #FFFFFF;
     display: inline-grid;
 }
 
 #menu > li:first-child  {
-  background-color: #009df3;
+  background-color: #FFFFFF;
 
 }
 
