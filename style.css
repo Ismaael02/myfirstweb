@@ -1,37 +1,75 @@
 body {
-background-color: #c40f0f;
-margin: 0;
-padding-left: 50px;
-padding-right: 50px;
+  background-color: #c40f0f;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  color: black;
+  margin: 0;
 }
 
-/* Comentario */
 
-/* IMPORTANT!
+/*
+Comentario:
+#header { border: thin solid black; }
+*/
 
-You can only have one item
-with the same id in at the same HTML page
+/*
+  005891
+  0082d6
+  0090eb
+  009df3
+  00a9f5
+  00b4f7
+*/
 
-#header {border: thin solid black; }
- */
+#main-image {
+  width: 600px;
+  border-radius: 50px;
+}
 
- #main-image {
-   width: 600px;
-   border-radius: 50px;
- }
+#main-image-wrapper {
+  text-align: center;
+}
 
- #main-image-wrapper {
-   text-align: center;
- }
+#menu {
+
+  list-style: none;
+  border: thin solid #FFFFFF;
+  padding: 0;
+  background-color: #FFFFFF;
+  padding: 5px;
+}
+
+#menu > li {
+    border: thin solid #000000;
+    display: inline-grid;
+}
+
+#menu > li:first-child  {
+  background-color: #FFFFFF;
+
+}
+
+#menu > li > a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+
+}
+
+#menu > li:hover {
+  background-color: #FFFFFF;
+}
+
+
 
 .grid-container {
-  border: thin solid black;
+  /* border: thin solid black; */
   display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'right right content content content content'
-    'footer footer footer footer footer footer';
-    grid-gap: 10px;
+  grid-template-areas: 'header header header header header header'
+                       'right right content content content content'
+                       'footer footer footer footer footer footer';
+  grid-gap: 10px;
 }
 
 #right {
@@ -61,41 +99,5 @@ with the same id in at the same HTML page
 #footer { grid-area: footer; }
 
 .box {
-/* border: thin solid black; */
+ /* border: thin solid black; */
 }
-
-/* menu styles */
-#menu {
-
-  list-style: none;
-  border: thin solid #00b4f7;
-  padding: 0;
-  background-color: #FFFFFF;
-  padding: 5px;
-}
-
-#menu > li {
-    border: thin solid #FFFFFF;
-    display: inline-grid;
-}
-
-#menu > li:first-child  {
-  background-color: #FFFFFF;
-
-}
-
-#menu > li > a {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-}
-
-#menu > li:hover {
-  background-color: #005891;
-  }
-
-  @media only screen and (max-width: 768px) {
-    #menu > li {
-        width: 100%;
-    }
-  }
