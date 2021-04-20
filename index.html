@@ -1,50 +1,145 @@
 <!DOCTYPE html>
+<!-- https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/ -->
 <html>
-<head>
-  <link rel="stylesheet" href="style.css">
-<title>Exemple!</title>
-</head>
-<body>
-
-<!--
-IMPORTANT!
-
-You can only have one item
-with the same id in at the same HTML page
--->
-
-<div class="grid-container">
-  <div class="box" id="header">
-      <ul id="menu">
-      <li> <a href="#">Home</a> </li>
-      <li> <a href="#">Peliculas</a> </li>
-      <li> <a href="#">Series</a> </li>
+  <head>
+   <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	  <main class="wrapper">
+<section class="menu">
+  <ul id="menu">
+    <li> <a href="#">Home</a> </li>
+    <li> <a href="#">Material</a> </li>
+    <li> <a href="#">Pasos</a> </li>
+    <li> <a href="#">Puig</a> </li>
+  </ul>
+</section>
+<section class="container">
+  <section class="sidebar sdb-left">
+    sidebar
+  </section>
+  <section class="content">
+  <section class="banner">
+      <article>
+        <p>......................................................................................................</p>
+        <a href="https://www.raspberrypi.org/products/raspberry-pi-4-model-b/">raspberry PI</a>
+      </article>
+    </section>
+  <section class="tarjeta" id="tarjetas">
+    <ul>
+      <li>
+        <figure>
+          <!-- Photo by Quentin Dr on Unsplash -->
+          <img src="https://images.unsplash.com/photo-1471421298428-1513ab720a8e" alt="Several hands holding beer glasses">
+          <figcaption><h3>Billions upon billions</h3></figcaption>
+        </figure>
+        <p>
+          Made in the interiors of collapsing stars star stuff harvesting star light venture billions upon billions Drake Equation brain is the seed of intelligence?
+        </p>
+        <a href="#">Visit Website</a>
+      </li>
+      <li>
+        <figure>
+          <!-- Photo by Quentin Dr on Unsplash -->
+          <img src="https://images.unsplash.com/photo-1471421298428-1513ab720a8e" alt="Several hands holding beer glasses">
+          <figcaption><h3>Billions upon billions</h3></figcaption>
+        </figure>
+        <p>
+          Made in the interiors of collapsing stars star stuff harvesting star light venture billions upon billions Drake Equation brain is the seed of intelligence?
+        </p>
+        <a href="#">Visit Website</a>
+      </li>
+      <li>
+        <figure>
+          <!-- Photo by Quentin Dr on Unsplash -->
+          <img src="https://images.unsplash.com/photo-1471421298428-1513ab720a8e" alt="Several hands holding beer glasses">
+          <figcaption><h3>Billions upon billions</h3></figcaption>
+        </figure>
+        <p>
+          Made in the interiors of collapsing stars star stuff harvesting star light venture billions upon billions Drake Equation brain is the seed of intelligence?
+        </p>
+        <a href="#">Visit Website</a>
+      </li>
+      <li>
+        <figure>
+          <!-- Photo by Quentin Dr on Unsplash -->
+          <img src="https://images.unsplash.com/photo-1471421298428-1513ab720a8e" alt="Several hands holding beer glasses">
+          <figcaption><h3>Billions upon billions</h3></figcaption>
+        </figure>
+        <p>
+          Made in the interiors of collapsing stars star stuff harvesting star light venture billions upon billions Drake Equation brain is the seed of intelligence?
+        </p>
+        <a href="#">Visit Website</a>
+      </li>
+      <li>
+        <figure>
+          <!-- Photo by Drew Farwell on Unsplash -->
+          <img src="https://images.unsplash.com/photo-1513309914637-65c20a5962e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80" alt="Several friends doing a toast">
+          <figcaption><h3>Drake Equation</h3></figcaption>
+        </figure>
+        <p>
+          Another world citizens of distant epochs from which we spring descended from astronomers Orion's sword shores of the cosmic ocean.
+        </p>
+        <a href="#">Visit Website</a>
+      </li>
+      <li>
+        <figure>
+          <!-- Photo by Rawpixel on Unsplash -->
+          <img src="https://images.unsplash.com/photo-1535359056830-d4badde79747?ixlib=rb-1.2.1&auto=format&fit=crop&w=3402&q=80" alt="Three different glasses of beer">
+          <figcaption><h3>Vast cosmic arena</h3></figcaption>
+        </figure>
+        <p>
+          Galaxies the ash of stellar alchemy prime number science inconspicuous motes of rock and gas brain is the seed of intelligence.
+        </p>
+        <a href="#">Visit Website</a>
+      </li>
     </ul>
+  </section>
+  </section>
+  <section class="sidebar sdb-right">
+    sidebar
+  </section>
+</section>
 
-  </div>
-  <div class="box" id="right">
-    <h2> Que es Netflix?</h2>
-    <p> Es un servicio online cuya finalidad es que sus usuarios puedan ver películas, documentales y series de televisión.El servicio online que ofrece Netflix se adapta al ordenador personal, a la tablet, al móvil o a la consola. En el interfaz del servicio es posible acceder a un inmenso catálogo de contenidos. Cuando un usuario hace un click sobre una película o una serie de televisión aparece un breve resumen explicativo y la valoración de otros usuarios. Quien consulta esta página se encuentra con una clasificación por géneros que ayuda notablemente a la hora de decidirse por un contenido u otro. Otra manera de elegir un contenido es recurriendo al buscador.
-    </p>
-  </div>
+<section class="services">
+  <ul>
+    <li>
+      <figure>
+        <!-- Photo by Drew Farwell on Unsplash -->
+        <img src="images/cabeza.jpg" alt="Cabesa">
+      </figure>
+      <h3>Lorem ipsum dolor </h3>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat, turpis sit amet gravida varius, dolor magna ullamcorper nulla, eget aliquam orci sapien in sem. Proin id volutpat metus, vitae malesuada massa. Morbi mi tellus, euismod sit amet nulla non, hendrerit venenatis lectus. Integer eget massa nunc. Aenean nec aliquet felis, eu aliquam urna. Mauris ut odio semper, rhoncus sem ut, vestibulum arcu. Duis interdum molestie neque. Etiam ultricies tortor quis molestie vulputate. Mauris tempor auctor leo. Morbi tincidunt, augue eu aliquam ullamcorper, mauris felis commodo erat, eget vestibulum nibh mi id enim. Fusce dictum, sem sed cursus cursus, metus libero convallis arcu, eget sagittis magna libero id dui. Suspendisse semper luctus interdum. Fusce id orci sit amet ex tristique finibus vel eget nibh. Vestibulum ut lacinia massa, eu interdum velit. </p>
 
-  <div class="box" id="content">
-      <div id="main-image-wrapper">
-    <img id="main-image" src="images/Netflix.jpg" />
-    <p>Netflix ofrece tres planes de suscripción para que puedas elegir el que mejor se adapta a tus necesidades. Cada uno cuenta con un precio distinto y puedes cambiar el plan contratado cuando quieras. A continuación, te mostramos los precios de los planes de Netflix:
-      <ol>
-      <li> Precio de los Planes de Netflix </li>
-      <li> Plan Básico: 7,99€ al mes </li>
-      <li> Plan Estándar: 11,99€ al mes </li>
-      <li> Plan Premium: 15,99€ al mes </li>
-    </ol>
-  </p>
-</div>
+    </li>
 
-  <div class="box" id="footer">
-    <pre> © 2021 IA Informática SL </pre>
-  </div>
-</div>
+    <li>
+      <figure>
+        <!-- Photo by Drew Farwell on Unsplash -->
+        <img src="images/cabeza.jpg" alt="Cabesa">
+      </figure>
+      <h3>Lorem ipsum dolor </h3>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat, turpis sit amet gravida varius, dolor magna ullamcorper nulla, eget aliquam orci sapien in sem. Proin id volutpat metus, vitae malesuada massa. Morbi mi tellus, euismod sit amet nulla non, hendrerit venenatis lectus. Integer eget massa nunc. Aenean nec aliquet felis, eu aliquam urna. Mauris ut odio semper, rhoncus sem ut, vestibulum arcu. Duis interdum molestie neque. Etiam ultricies tortor quis molestie vulputate. Mauris tempor auctor leo. Morbi tincidunt, augue eu aliquam ullamcorper, mauris felis commodo erat, eget vestibulum nibh mi id enim. Fusce dictum, sem sed cursus cursus, metus libero convallis arcu, eget sagittis magna libero id dui. Suspendisse semper luctus interdum. Fusce id orci sit amet ex tristique finibus vel eget nibh. Vestibulum ut lacinia massa, eu interdum velit. </p>
 
-</body>
+    </li>
+
+    <li>
+      <figure>
+        <!-- Photo by Drew Farwell on Unsplash -->
+        <img src="images/cabeza.jpg" alt="Cabesa">
+      </figure>
+      <h3>Lorem ipsum dolor </h3>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat, turpis sit amet gravida varius, dolor magna ullamcorper nulla, eget aliquam orci sapien in sem. Proin id volutpat metus, vitae malesuada massa. Morbi mi tellus, euismod sit amet nulla non, hendrerit venenatis lectus. Integer eget massa nunc. Aenean nec aliquet felis, eu aliquam urna. Mauris ut odio semper, rhoncus sem ut, vestibulum arcu. Duis interdum molestie neque. Etiam ultricies tortor quis molestie vulputate. Mauris tempor auctor leo. Morbi tincidunt, augue eu aliquam ullamcorper, mauris felis commodo erat, eget vestibulum nibh mi id enim. Fusce dictum, sem sed cursus cursus, metus libero convallis arcu, eget sagittis magna libero id dui. Suspendisse semper luctus interdum. Fusce id orci sit amet ex tristique finibus vel eget nibh. Vestibulum ut lacinia massa, eu interdum velit. </p>
+
+    </li>
+
+  </ul>
+</section>
+
+</main>
+<footer>
+  <p>&copy; 2021. Made with ❤ and CSS Grid.</p>
+</footer>
+  </body>
+  <script src="script.js"></script>
 </html>
