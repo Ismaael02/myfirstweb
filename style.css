@@ -1,6 +1,12 @@
 /* Typography imported from Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
 
+* {
+  position: relative;
+  z-index: -1;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
 }
@@ -15,7 +21,7 @@ html {
 }
 
 a {
-  background-color: goldenrod;
+  background-color: #ffffff;
   text-decoration: none;
   color: white;
   border-radius: .25rem;
@@ -38,28 +44,32 @@ a:hover {
 }
 
 .sidebar {
-  color:orange;
+  color: white;
 }
 
 .sdb-right {
-  border-left: thin solid orange;
+  border-left: thin solid white;
 }
 
 .sdb-left {
-  border-right: thin solid orange;
+  border-right: thin solid white;
 }
 
 
 /* Styles for the banner image */
 .banner {
   /* Photo by mnm.all on Unsplash */
-  background: url('https://www.profesionalreview.com/wp-content/uploads/2019/10/raspberry-pi-logo.jpg') center;
   background-size: cover;
-  padding: 4rem 2rem;
+  padding: 10rem 5rem;
   /* grid styles */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   align-items: center;
+
+}
+
+.banner > img {
+  max-width: 100%;
 }
 
 .banner > * {
@@ -88,7 +98,7 @@ a:hover {
 
 .tarjeta > ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(510px, 1fr));
   grid-gap: 1rem;
 }
 
@@ -99,7 +109,7 @@ a:hover {
 }
 
 .tarjeta > ul > li > figure {
-  max-height: 220px;
+  max-height: 250px;
   overflow: hidden;
   border-top-left-radius: .5rem;
   border-top-right-radius: .5rem;
@@ -144,18 +154,42 @@ footer {
   font-size: .75rem;
 }
 
+/* sticky */
+
+.sticky {
+	background-color: #ffffff;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+  z-index: 100;
+}
+
+.hidden { display: none; }
+.shown { display: block; }
+
+/* mobile selector */
+#mobile-selector {
+  display: none;
+  text-align: right;
+  padding: 0.25rem;
+}
+
+
 /* menu styles */
 #menu {
-
+  display: block;
   list-style: none;
-  border: thin solid #00b4f7;
+  list-style: none;
+  border: thin solid  #000000;
   padding: 0;
-  background-color: #0082d6;
+  background-color: #bb0f0f;
   padding: 5px;
+  position: realtive;
+  z-index: 10;
 }
 
 #menu > li {
-    border: thin solid #0090eb;
+    border: thin soli  background-color: lightblue;d #000000;
     display: inline-grid;
 }
 
@@ -165,9 +199,10 @@ footer {
 }
 
 #menu > li > a {
-  color: white;
+  color: black;
   text-decoration: none;
   padding: 10px;
+  font-weight: bolder;
 
 }
 
@@ -197,8 +232,7 @@ footer {
 }
 
 .services > ul > li > figure > img {
-  display: block;
-  max-width: 100%;
+  width: 100%;
   padding: 0.5rem;
 }
 
@@ -206,10 +240,23 @@ footer {
   padding: 1rem;
   float: right;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: bolder;
+  border-radius: 50%;
+  background-color: black;
 }
 
+.services  > ul > li > .wstone {
+  color: black;
+  background-color: white;
+}
+
+
 @media only screen and (max-width: 768px) {
+
+  #menu {
+   display: none;
+ }
+
   #menu > li {
       width: 100%;
   }
@@ -224,6 +271,24 @@ footer {
 
   .tarjeta > ul {
     padding: 0;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
   }
+
+creacion, body{
+  height: 100%;
+  background-color: #000;
+}
+
+.contenedor{
+  height: 49%;
+  background-color: #6A737C;
+  margin: 1% 1%;
+}
+
+  /* mobile selector */
+    #mobile-selector {
+      display: block;
+    }
 
 }
