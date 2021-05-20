@@ -2,30 +2,37 @@
 <!-- https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/ -->
 <html>
   <head>
-    <style>
-    body { background-color: #f5f5f0}
-  </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
    <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <link rel="stylesheet" href="instalacion.css">
          <meta charset="utf-8"/>
   </head>
   <body>
 	  <main class="wrapper">
-            <nav class="menu sticky">
-                      <div id="mobile-selector">
-                                  <i class="fa fa-2x fa-bars"></i>
-                                  </div>
-  <ul id="menu">
-          <li> <a href="index.html">Home</a> </li>
-          <li> <a href="material.html">Material</a> </li>
-          <li> <a href="creacion.html">Creación del servidor</a> </li>
-          <li> <a href="Instalacion.html">Instalación dual</a> </li>
-        </ul>
-      </nav>
 
-<title>Instalación Dual</title>
-<h1 style= "font-family:Gothic;"> Cómo iniciar dual una Raspberry Pi con BerryBoot </h1>
-<h2 style= "font-family:Gothic">  ¿Qué hace BerryBoot? </h2>
+      <nav class="menu sticky">
+                <div id="mobile-selector">
+                            <i class="fa fa-2x fa-bars"></i>
+                            </div>
+
+  <ul id="menu">
+    <li> <a href="index.html">Inicio</a> </li>
+    <li> <a href="configuracion.html">Configuración NAS</a> </li>
+    <li> <a href="#">Programas</a>
+
+      <ul>
+        <li><a href="kodi.html">LibreELEC</a></li>
+        <li><a href="openmedia.html">OpenMediaVault</a></li>
+      </ul>
+    </li>
+
+
+    <li> <a href="Instalacion.html">Instalación dual</a> </li>
+  </ul>
+</nav>
+
+<h1> Cómo iniciar dual una Raspberry Pi con BerryBoot </h1>
+<h2>  ¿Qué hace BerryBoot? </h2>
 <p> ¿Alguna vez ha tenido problemas para instalar un archivo de imagen de disco ISO en la tarjeta SD de su Raspberry Pi? ¿Quieres más de un sistema operativo? La respuesta es una herramienta que ayuda a administrar la instalación de uno o más sistemas operativos para su Pi. </p>
 <img src="images/muo-diy-raspberrypi-berryboot-selectos.png" widht="600" height="300">
 <p>Eso es básicamente lo que hace BerryBoot. Al presentarle una selección de sistemas operativos para elegir, BerryBoot descarga los sistemas operativos y los instala, con una mínima interacción de su parte.</p>
@@ -33,31 +40,31 @@
 <p>También le proporciona algunas herramientas de red básicas, configuraciones de ubicación e incluso un editor para ajustar la configuración. Es posible que, por ejemplo, desee editar la configuración de su red en wpa_supplicant.conf. o puede que prefiera cambiar el tiempo de espera del menú de arranque en cmdline.txt.</p>
 <p>Usar BerryBoot es sencillo:</p>
 <ol>
-  <li style="font-family: Gothic"> Descarga BerryBoot.</li>
-  <li style="font-family: Gothic"> Extraiga el archivo ZIP en una tarjeta SD formateada.</li>
-  <li style="font-family: Gothic"> Configure BerryBoot</li>
-  <li style="font-family: Gothic"> Seleccione e instale uno o más sistemas operativos.</li>
-  <li style="font-family: Gothic">  Elija qué sistema operativo desea usar cada vez que inicie su Raspberry Pi.</li>
+  <li> Descarga BerryBoot.</li>
+  <li> Extraiga el archivo ZIP en una tarjeta SD formateada.</li>
+  <li> Configure BerryBoot</li>
+  <li> Seleccione e instale uno o más sistemas operativos.</li>
+  <li>  Elija qué sistema operativo desea usar cada vez que inicie su Raspberry Pi.</li>
 </ol>
 
 <p> BerryBoot también permite instalar los sistemas operativos Raspberry Pi elegidos en una ubicación que no sea la tarjeta SD. Si tiene almacenamiento conectado a la red (NAS) o una unidad de disco duro (HDD) conectada a su Pi, se pueden utilizar. Esta es una excelente manera de reducir la escritura de datos en su tarjeta SD y prolongar su vida útil.</p>
 
 <p>Sin embargo, la tarjeta SD deberá permanecer en la Pi para arrancar.</p>
 
-<h2 style= "font-family:Gothic">  Cómo obtener BerryBoot y arranque dual de su Raspberry Pi </h2>
+<h2>  Cómo obtener BerryBoot y arranque dual de su Raspberry Pi </h2>
 <p> Para usar BerryBoot, deberá descargarlo de Sourceforge. Este es un repositorio en línea donde se alojan muchas aplicaciones y utilidades.</p>
 
 <p>BerryBoot está disponible en una de dos descargas. La primera opción es para todas las versiones de Raspberry Pi, desde la original y la Raspberry Pi Zero hasta la Pi 3B +. Sin embargo, si tiene una Raspberry Pi 4, hay una versión dedicada disponible</p>
 <tittle>Descarga:</tittle>
 
-<h2 style= "font-family:Gothic">  Copiar BerryBoot a una tarjeta SD formateada </h2>
+<h2>  Copiar BerryBoot a una tarjeta SD formateada </h2>
 <p> Una vez descargado, el contenido del archivo ZIP deberá extraerse y copiarse en la tarjeta SD de su Pi.</p>
 <ol>
-<li style="font-family: Gothic"> Comience insertando la tarjeta SD en su PC</li>
-<li style="font-family: Gothic"> Busque el archivo ZIP descargado en su administrador de archivos </li>
-<li style="font-family: Gothic"> Haga clic derecho y seleccione Extraer todo  </li>
-<li style="font-family: Gothic"> En el cuadro de diálogo que sigue, haga clic en Examinar </li>
-<li style="font-family: Gothic"> Seleccione la letra de la unidad que coincida con su tarjeta SD, luego haga clic en Extraer </li>
+<li> Comience insertando la tarjeta SD en su PC</li>
+<li> Busque el archivo ZIP descargado en su administrador de archivos </li>
+<li> Haga clic derecho y seleccione Extraer todo  </li>
+<li> En el cuadro de diálogo que sigue, haga clic en Examinar </li>
+<li> Seleccione la letra de la unidad que coincida con su tarjeta SD, luego haga clic en Extraer </li>
 </ol>
 
 <h3>FOTO</h3>
@@ -67,7 +74,7 @@
 <p> El siguiente paso es sencillo. Inserte la tarjeta SD en su Raspberry Pi y enciéndala. Asegúrese de tener un teclado y / o mouse conectados. Necesitará uno o ambos para seleccionar sus sistemas operativos.</p>
 
 
-<h2 style= "font-family:Gothic">  Copiar BerryBoot a una tarjeta SD formateada</h2>
+<h2>  Copiar BerryBoot a una tarjeta SD formateada</h2>
 <p>En la pantalla de su Raspberry Pi, inicialmente se le presentará una pantalla de configuración rápida. La primera sección, Video, establece el tipo de TV que está usando. Si puede ver bordes verdes en la parte superior e inferior de la pantalla, seleccione Sí (deshabilitar sobreexploración) . De lo contrario, seleccione No.</p>
 <img src="images/opciones.png" width="550" alt="330">
 <p> A continuación, especifique el tipo correcto de conexión de red. Si hay un cable Ethernet conectado, elija Cableado . De lo contrario, seleccione WiFi , luego busque el SSID de su red en la lista e ingrese la contraseña.</p>
@@ -75,14 +82,14 @@
 <p> Por último, asegúrese de seleccionar la distribución correcta de zona horaria y teclado en Configuración regional. Esto asegurará que BerryBoot pueda acceder al servidor y descargar su elección de sistema operativo.</p>
 <p> Haga clic en Aceptar cuando haya terminado.</p>
 
-<h2 style= "font-family:Gothic"> Instalar sistemas operativos Raspberry Pi de arranque dual o múltiple</h2>
+<h2> Instalar sistemas operativos Raspberry Pi de arranque dual o múltiple</h2>
 <p>El siguiente mensaje le invita a seleccionar un destino para los sistemas operativos que está a punto de instalar.</p>
 <p> Siempre tendrá la opción de elegir la tarjeta SD local, normalmente etiquetada como mmcblk0 . Pero si tiene una caja NAS, una unidad USB o ambas, también verá las opciones para ellas.</p>
 <p> Una unidad USB siempre tiene la etiqueta sda . El NAS aparecerá como almacenamiento en red .</p>
 
 <p> Con la elección hecha, haga clic en Formatear (si es necesario) y continúe. Deje el sistema de archivos como la opción ext4 predeterminada, probablemente no utilizará la unidad con ningún otro dispositivo.</p>
 <img src="images/menu.png" width="600"  alt="380">
-<p> <mark>Tenga en cuenta que al formatear, se eliminarán todos los archivos existentes en el disco.</mark> Si está instalando en la tarjeta microSD, se formateará el espacio aparte de la partición de arranque activa.</p>
+<p> <mark>Tenemos que tener en cuenta que al formatear, se eliminarán todos los archivos existentes en el disco.</mark> Si está instalando en la tarjeta microSD, se formateará el espacio aparte de la partición de arranque activa.</p>
 <p> Una vez completado, se muestra el editor de menú BerryBoot. Verá varios sistemas operativos agrupados en pestañas por categoría. Dedique unos minutos a ver qué se ofrece.</p>
 <img src="images/so.png" width="600" alt="280">
 <p> En esta etapa, solo puede instalar un sistema operativo. Una vez que se haya agregado y se haya reiniciado el sistema, se pueden agregar más sistemas operativos.</p>
@@ -92,13 +99,15 @@
 <p> Ahora puede instalar tantos sistemas operativos adicionales como necesite, solo asegúrese de que su medio de almacenamiento no se llene. Los números en la esquina inferior izquierda mostrarán cuánto espacio queda en el dispositivo de destino. Demasiados sistemas operativos llenarán el disco, así que manténgalo en dos o tres.</p>
  <p>Para instalar un sistema operativo:</p>
  <ol>
- <li style="font-family: Gothic"> Haga clic en Agregar sistema operativo para buscar un sistema operativo</li>
- <li style="font-family: Gothic"> Marque la casilla de los sistemas operativos que desee </li>
- <li style="font-family: Gothic"> Haga clic en Aceptar cuando haya terminado </li>
- <li style="font-family: Gothic"> Seleccione el sistema operativo que desea establecer como predeterminado , que se iniciará cuando se encienda su Raspberry Pi </li>
- <li style="font-family: Gothic"> Haga clic en Salir para descargar e instalar los sistemas operativos elegidos. </li>
+ <li> Haga clic en Agregar sistema operativo para buscar un sistema operativo</li>
+ <li> Marque la casilla de los sistemas operativos que desee </li>
+ <li> Haga clic en Aceptar cuando haya terminado </li>
+ <li> Seleccione el sistema operativo que desea establecer como predeterminado , que se iniciará cuando se encienda su Raspberry Pi </li>
+ <li>> Haga clic en Salir para descargar e instalar los sistemas operativos elegidos. </li>
  </ol>
  <p> Esto puede llevar un tiempo dependiendo de los sistemas operativos que elija y de cuántos.</p>
 
+</main>
 
 </body>
+</html>
