@@ -1,7 +1,15 @@
 * { font-family: Gothic; }
 body { background-color: #f5f5f0}
 img {
-  border: #e1e7e7 inset;
+  border: #000000 inset;
   text-align: justify;
   border-width: 5px;
+}
+
+.titulo{
+  font-size: 1.5rem;
+}
+
+.subtitulo {
+  font-size: 1.1rem;
 }
